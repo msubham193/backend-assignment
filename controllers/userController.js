@@ -32,7 +32,6 @@ exports.login = async (req, res, next) => {
     return;
   }
 
-  console.log(user);
 
   const isPasswordMatched = await user.comparePassword(password);
 
